@@ -331,3 +331,63 @@ footer > :first-child {
   padding: 15px 0;
   font-weight: bold;
 }
+
+
+@media screen and (max-width:1000px) {
+    nav{
+      flex-direction: column;
+      gap: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card ul, .card>:last-child{
+      display: none;
+    }
+    .cards,.addon > :nth-child(2){
+      flex-direction: column;
+    }
+    .card,.popular,.addoncard{
+      width: 80%;
+    }
+    .questions{
+      width: 100%;
+      padding-left: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+
+  .left li{
+    display: none;
+
+  }
+  .left>:first-child{
+    display: block;
+    text-align: center;
+  }
+  nav ul > :first-child {
+    margin-right: 0;
+  }
+  .showcase > :first-child h3{
+    font-size: 3rem;
+  }
+  .faq>:nth-child(2){
+    display: none;
+  }
+  .faq{
+    grid-template-columns: 1fr;
+  }
+  .questions{
+    width: 80%;
+    margin: auto;
+  }
+  .addon h3{
+    font-size: 2rem;
+  }
+
+}
+@media screen and (max-width:450px) {
+  .showcase > :first-child h3{
+    font-size: 2rem;
+  }
+}
